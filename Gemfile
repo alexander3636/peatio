@@ -6,7 +6,7 @@ git_source(:github) { |repo_slug| "https://github.com/#{repo_slug}" }
 
 ruby '2.6.2'
 
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 gem 'puma', '~> 3.12.0'
 gem 'mysql2', '~> 0.5.2'
 gem 'redis-rails', '~> 5.0.2'
@@ -31,7 +31,7 @@ gem 'grape-entity', '~> 0.7.1'
 gem 'grape-swagger', '~> 0.30.1'
 gem 'grape-swagger-ui', '~> 2.2.8'
 gem 'grape-swagger-entity', '~> 0.2.5'
-gem 'grape_logging', '~> 1.8.0'
+gem 'grape_logging', '~> 1.8.1'
 gem 'rack-attack', '~> 5.4.2'
 gem 'easy_table', '~> 0.0.10'
 gem 'faraday', '~> 0.15.4'
@@ -62,23 +62,23 @@ group :development, :test do
   gem 'bump',         '~> 0.7'
   gem 'faker',        '~> 1.8'
   gem 'pry-byebug',   '~> 3.7'
-  gem 'bullet',       '~> 5.9'
+  gem 'bullet', '~> 5.9', '>= 5.9.0'
   gem 'grape_on_rails_routes', '~> 0.3.2'
 end
 
 group :development do
-  gem 'annotate',   '~> 2.7.4'
+  gem 'annotate', '~> 2.7.4'
   gem 'ruby-prof',  '~> 0.17.0', require: false
   gem 'listen',     '>= 3.0.5', '< 3.2'
 end
 
 group :test do
-  gem 'rspec-rails',         '~> 3.8'
+  gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
   gem 'rspec-retry',         '~> 0.6'
   gem 'webmock',             '~> 3.5'
   gem 'database_cleaner',    '~> 1.7'
   gem 'mocha',               '~> 1.8', require: false
-  gem 'factory_bot_rails',   '~> 5.0'
+  gem 'factory_bot_rails', '~> 5.0', '>= 5.0.1'
   gem 'timecop',             '~> 0.9'
   gem 'rubocop-rspec',       '~> 1.32', require: false
 end
