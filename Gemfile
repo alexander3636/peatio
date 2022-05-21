@@ -73,12 +73,12 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails',         '~> 3.8'
+  gem 'rspec-rails', '~> 3.8', '>= 3.8.2'
   gem 'rspec-retry',         '~> 0.6'
   gem 'webmock',             '~> 3.5'
   gem 'database_cleaner',    '~> 1.7'
   gem 'mocha',               '~> 1.8', require: false
-  gem 'factory_bot_rails',   '~> 5.0'
+  gem 'factory_bot_rails', '~> 5.0', '>= 5.0.1'
   gem 'timecop',             '~> 0.9'
   gem 'rubocop-rspec',       '~> 1.32', require: false
 end
