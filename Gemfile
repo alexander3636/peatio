@@ -6,7 +6,7 @@ git_source(:github) { |repo_slug| "https://github.com/#{repo_slug}" }
 
 ruby '2.6.2'
 
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
 gem 'puma', '~> 3.12.0'
 gem 'mysql2', '~> 0.5.2'
 gem 'redis-rails', '~> 5.0.2'
@@ -67,7 +67,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'annotate',   '~> 2.7.4'
+  gem 'annotate', '~> 2.7.4'
   gem 'ruby-prof',  '~> 0.17.0', require: false
   gem 'listen',     '>= 3.0.5', '< 3.2'
 end
